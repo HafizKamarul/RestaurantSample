@@ -41,11 +41,6 @@ body {
     --sakura-accent: #E53E3E;
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
 /* Navigation Styles */
 .navbar {
     backdrop-filter: blur(10px);

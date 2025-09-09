@@ -37,12 +37,18 @@ particlesJS('particles-js', {
   retina_detect: true
 });
 
-// Use native smooth scrolling instead of Lenis
-document.documentElement.style.scrollBehavior = 'smooth';
+// Initialize Lenis for smooth scrolling (matching Samples 1 & 2)
+const lenis = new Lenis({
+  lerp: 0.1,
+  smooth: true,
+  smoothTouch: false,
+});
 
-// Ensure body can scroll
-document.body.style.overflow = 'auto';
-document.documentElement.style.overflow = 'auto';
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
 
 // Mobile menu toggle
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -84,11 +90,7 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
-      // Use native smooth scroll
-      target.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
+      lenis.scrollTo(target, { offset: -80 });
     }
   });
 });
