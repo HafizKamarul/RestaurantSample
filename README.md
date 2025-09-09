@@ -32,10 +32,26 @@ A collection of three professionally designed restaurant websites showcasing dif
 - No database required (static HTML/CSS/JS)
 
 ### Quick Start
+
+#### **🌐 Live Demo**
+The portfolio is now deployed with a main landing page that showcases all three samples.
+
+#### **📍 Access Points**
+- **Main Portfolio:** `/index.html` (landing page with overview)
+- **Sample 1:** `/sample1-modern-cafe/index.html` (Local Noodle House)
+- **Sample 2:** `/sample2-vibrant-diner/index.html` (Urban Pizza Co)  
+- **Sample 3:** `/sample3-premium-sushi/index.html` (Sakura Sushi Bar)
+
+#### **💻 Local Development**
 1. Clone or download the repository
-2. Upload files to your web server
-3. Access any sample through its `index.html` file
-4. Navigation between samples is built-in via floating buttons
+2. Start a local server:
+   ```bash
+   python -m http.server 8080
+   # OR
+   npx serve .
+   ```
+3. Open `http://localhost:8080` to see the main portfolio
+4. Navigate between samples using the built-in portfolio buttons
 
 ### File Structure
 ```

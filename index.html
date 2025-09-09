@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Portfolio - Three Professional Website Samples</title>
+    <meta name="description" content="Professional restaurant website portfolio showcasing three different design styles: Local Noodle House, Urban Pizza Co, and Sakura Sushi Bar.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'warm-brown': '#8B4513',
+                        'cream': '#FFF8DC',
+                        'deep-orange': '#FF6B35'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .sample-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
+        }
+        .sample-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #8B4513 0%, #CD853F 50%, #DEB887 100%);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #8B4513, #CD853F);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.3);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-cream">
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="heading-font text-5xl md:text-7xl font-bold text-cream mb-6 fade-in">
+                    Restaurant Portfolio
+                </h1>
+                <p class="text-xl md:text-2xl text-cream/90 mb-8 fade-in" style="animation-delay: 0.2s;">
+                    Professional Website Designs for the Food & Beverage Industry
+                </p>
+                <p class="text-lg text-cream/80 mb-12 fade-in" style="animation-delay: 0.4s;">
+                    Three distinct styles showcasing versatility in restaurant web development
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in" style="animation-delay: 0.6s;">
+                    <a href="#samples" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block">
+                        View Portfolio
+                    </a>
+                    <a href="sample1-modern-cafe/index.html" class="bg-white/20 backdrop-blur-sm text-cream px-8 py-4 rounded-lg font-semibold text-lg inline-block hover:bg-white/30 transition-colors">
+                        Quick Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-cream animate-bounce">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Portfolio Samples Section -->
+    <section id="samples" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-warm-brown mb-6 fade-in">
+                    Three Unique Styles
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in" style="animation-delay: 0.2s;">
+                    Each sample demonstrates different design approaches, target audiences, and technical implementations
+                    to showcase the full range of restaurant website development capabilities.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Sample 1: Local Noodle House -->
+                <div class="sample-card rounded-2xl overflow-hidden border border-warm-brown/20 fade-in" style="animation-delay: 0.1s;">
+                    <div class="aspect-video bg-gradient-to-br from-amber-100 to-orange-100 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-warm-brown/10"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-6xl mb-4">🍜</div>
+                                <h3 class="heading-font text-2xl font-bold text-warm-brown">Local Noodle House</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">Single Page</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold ml-2">Warm Theme</span>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold text-gray-800 mb-4">Cozy Asian Comfort</h3>
+                        <p class="text-gray-600 mb-6">
+                            Warm, inviting design featuring traditional Asian comfort food. 
+                            Single-page layout with smooth scrolling and authentic color palette.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Single page application
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Smooth scroll sections
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Mobile responsive
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Warm color scheme
+                            </div>
+                        </div>
+                        <a href="sample1-modern-cafe/index.html" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold w-full inline-block text-center">
+                            View Sample 1
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sample 2: Urban Pizza Co -->
+                <div class="sample-card rounded-2xl overflow-hidden border border-warm-brown/20 fade-in" style="animation-delay: 0.3s;">
+                    <div class="aspect-video bg-gradient-to-br from-red-100 to-orange-100 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-red-600/10"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-6xl mb-4">🍕</div>
+                                <h3 class="heading-font text-2xl font-bold text-red-700">Urban Pizza Co</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">Multi-Page</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold ml-2">Modern</span>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold text-gray-800 mb-4">Vibrant Urban Style</h3>
+                        <p class="text-gray-600 mb-6">
+                            Bold, modern design for a contemporary pizzeria. 
+                            Multi-page structure with dynamic animations and vibrant red theme.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                4-page website structure
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Interactive menu system
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Contact & reservation forms
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Bold modern design
+                            </div>
+                        </div>
+                        <a href="sample2-vibrant-diner/index.html" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold w-full inline-block text-center transition-colors">
+                            View Sample 2
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sample 3: Sakura Sushi Bar -->
+                <div class="sample-card rounded-2xl overflow-hidden border border-warm-brown/20 fade-in" style="animation-delay: 0.5s;">
+                    <div class="aspect-video bg-gradient-to-br from-yellow-100 to-red-100 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-yellow-600/10"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center">
+                                <div class="text-6xl mb-4">🌸</div>
+                                <h3 class="heading-font text-2xl font-bold text-yellow-700">Sakura Sushi Bar</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">6 Pages</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold ml-2">Premium</span>
+                        </div>
+                        <h3 class="heading-font text-2xl font-bold text-gray-800 mb-4">Premium Japanese</h3>
+                        <p class="text-gray-600 mb-6">
+                            Elegant, sophisticated design for upscale Japanese dining. 
+                            Complete 6-page site with advanced features and gold accent theme.
+                        </p>
+                        <div class="space-y-2 mb-6">
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                6-page comprehensive site
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Image gallery & lightbox
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Particle.js animations
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Premium gold theme
+                            </div>
+                        </div>
+                        <a href="sample3-premium-sushi/index.html" class="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg font-semibold w-full inline-block text-center transition-colors">
+                            View Sample 3
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-warm-brown mb-6 fade-in">
+                    Technical Excellence
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in" style="animation-delay: 0.2s;">
+                    Built with modern web technologies and best practices for performance, accessibility, and user experience.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center fade-in" style="animation-delay: 0.1s;">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Responsive Design</h3>
+                    <p class="text-gray-600 text-sm">Mobile-first approach ensuring perfect display on all devices</p>
+                </div>
+
+                <div class="text-center fade-in" style="animation-delay: 0.2s;">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rocket text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Fast Performance</h3>
+                    <p class="text-gray-600 text-sm">Optimized code and assets for lightning-fast loading times</p>
+                </div>
+
+                <div class="text-center fade-in" style="animation-delay: 0.3s;">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">SEO Optimized</h3>
+                    <p class="text-gray-600 text-sm">Proper meta tags and semantic structure for search engines</p>
+                </div>
+
+                <div class="text-center fade-in" style="animation-delay: 0.4s;">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">User Experience</h3>
+                    <p class="text-gray-600 text-sm">Intuitive navigation and engaging interactive elements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Section -->
+    <section class="py-20 hero-bg">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="heading-font text-4xl md:text-5xl font-bold text-cream mb-6 fade-in">
+                    Ready to Explore?
+                </h2>
+                <p class="text-xl text-cream/90 mb-8 fade-in" style="animation-delay: 0.2s;">
+                    Start with Sample 1 for a quick overview, or jump directly to any sample that interests you most.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in" style="animation-delay: 0.4s;">
+                    <a href="sample1-modern-cafe/index.html" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block">
+                        🍜 Start with Sample 1
+                    </a>
+                    <a href="sample2-vibrant-diner/index.html" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block transition-colors">
+                        🍕 Try Sample 2
+                    </a>
+                    <a href="sample3-premium-sushi/index.html" class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-lg font-semibold text-lg inline-block transition-colors">
+                        🌸 View Sample 3
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-warm-brown py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-cream/90 mb-4">Professional Restaurant Website Portfolio</p>
+            <p class="text-cream/70 text-sm">
+                Showcasing versatility in web design • Built with modern technologies • Ready for deployment
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for animations -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade in animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Initial animation for hero elements
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in').forEach(el => {
+                    el.classList.add('visible');
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

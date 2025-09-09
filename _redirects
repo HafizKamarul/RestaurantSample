@@ -1,0 +1,9 @@
+# Netlify redirects file
+
+# Redirect root paths to sample directories
+/sample1  /sample1-modern-cafe/index.html  200
+/sample2  /sample2-vibrant-diner/index.html  200
+/sample3  /sample3-premium-sushi/index.html  200
+
+# Handle 404s by serving the main portfolio page
+/*    /index.html   200
