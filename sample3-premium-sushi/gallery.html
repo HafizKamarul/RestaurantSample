@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Sakura Sushi Bar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'sakura-gold': '#D4AF37',
+            'sakura-red': '#B91C1C',
+            'sakura-dark': '#1A1A1A',
+            'sakura-darker': '#0F0F0F',
+            'sakura-light': '#2A2A2A'
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'serif'],
+            'japanese': ['Noto Sans JP', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-japanese bg-sakura-dark text-white">
+  <div id="particles-js"></div>
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-sakura-dark/95 backdrop-blur-md shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <a href="index.html" class="text-2xl font-heading font-bold text-sakura-gold">🌸 Sakura Sushi Bar</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="index.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Home</a>
+            <a href="menu.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Menu</a>
+            <a href="promotions.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Promotions</a>
+            <a href="gallery.html" class="text-sakura-gold px-3 py-2">Gallery</a>
+            <a href="blog.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">News</a>
+            <a href="contact.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-12 bg-sakura-darker">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="scroll-animate fade-up text-5xl md:text-7xl font-heading text-sakura-gold mb-6">Gallery</h1>
+      <p class="scroll-animate fade-up animate-delay-200 text-xl text-gray-300 max-w-3xl mx-auto">
+        Experience the artistry of Japanese cuisine through our visual journey
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="py-20 bg-sakura-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Gallery Item 1 -->
+        <div class="scroll-animate fade-up group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Premium Sushi Selection" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Premium Sushi Selection - Handcrafted with finest ingredients">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="scroll-animate fade-up animate-delay-200 group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1563612116625-3012372fccce?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Fresh Sashimi Platter" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Fresh Sashimi Platter - Daily selection from Japan's finest markets">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="scroll-animate fade-up animate-delay-400 group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Restaurant Interior" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Traditional Japanese Interior - Authentic ambiance for unforgettable dining">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="scroll-animate fade-up group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Signature Rolls" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Signature Rolls - Creative fusion with traditional techniques">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="scroll-animate fade-up animate-delay-200 group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Chirashi Bowl" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Chirashi Bowl - Artfully arranged seasonal sashimi over sushi rice">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="scroll-animate fade-up animate-delay-400 group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Premium Sake Selection" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Premium Sake Collection - Carefully curated from Japan's finest breweries">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 7 -->
+        <div class="scroll-animate fade-up group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Tempura Selection" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Tempura Selection - Light, crispy perfection with seasonal vegetables">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 8 -->
+        <div class="scroll-animate fade-up animate-delay-200 group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Grilled Specialties" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Grilled Specialties - Master chef's technique with premium ingredients">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 9 -->
+        <div class="scroll-animate fade-up animate-delay-400 group cursor-pointer gallery-item">
+          <div class="relative overflow-hidden rounded-xl shadow-lg">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-4.0.3&w=600&q=80" 
+                 alt="Tea Ceremony" 
+                 class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                 data-caption="Traditional Tea Ceremony - Authentic matcha experience">
+            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <i class="fas fa-search-plus text-sakura-gold text-3xl"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Behind the Scenes -->
+  <section class="py-20 bg-sakura-darker">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="scroll-animate fade-up text-4xl md:text-6xl font-heading text-sakura-gold mb-6">Behind the Scenes</h2>
+        <p class="scroll-animate fade-up animate-delay-200 text-xl text-gray-300 max-w-3xl mx-auto">
+          Witness the artistry and precision that goes into every dish at Sakura Sushi Bar
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="scroll-animate fade-up">
+          <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?ixlib=rb-4.0.3&w=800&q=80" 
+               alt="Chef at Work" class="rounded-xl shadow-xl">
+        </div>
+        <div class="scroll-animate fade-up animate-delay-300">
+          <h3 class="text-3xl font-heading text-sakura-gold mb-6">Master Chef Takeshi Yamamoto</h3>
+          <p class="text-xl text-gray-300 mb-6 leading-relaxed">
+            With over 20 years of experience in Tokyo's finest establishments, Chef Yamamoto brings authentic Japanese culinary artistry to Kuala Lumpur.
+          </p>
+          <p class="text-lg text-gray-400 mb-8">
+            Every piece of sushi is crafted with precision, respecting the traditional techniques while embracing seasonal creativity.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <i class="fas fa-medal text-sakura-gold mr-3"></i>
+              <span>20+ Years Experience in Tokyo</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-fish text-sakura-gold mr-3"></i>
+              <span>Daily Selection of Premium Fish</span>
+            </div>
+            <div class="flex items-center">
+              <i class="fas fa-star text-sakura-gold mr-3"></i>
+              <span>Traditional Edo-mae Techniques</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4">
+    <div class="relative max-w-5xl max-h-full">
+      <button id="lightbox-close" class="absolute -top-12 right-0 text-white hover:text-sakura-gold text-4xl z-10">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+      <div id="lightbox-caption" class="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-4 text-center rounded-b-lg">
+      </div>
+      <!-- Navigation arrows -->
+      <button id="lightbox-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-sakura-gold text-3xl">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button id="lightbox-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-sakura-gold text-3xl">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-sakura-dark border-t border-sakura-light py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-heading text-sakura-gold mb-4">🌸 Sakura Sushi Bar</h3>
+          <p class="text-gray-400">Authentic Japanese dining experience in Kuala Lumpur.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-sakura-gold transition-colors">Home</a></li>
+            <li><a href="menu.html" class="text-gray-400 hover:text-sakura-gold transition-colors">Menu</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-sakura-gold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+          <p class="text-gray-400">+60 3-2148 8888<br>123 Bukit Bintang, KL</p>
+        </div>
+      </div>
+      
+      <div class="border-t border-sakura-light mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2024 Sakura Sushi Bar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Gallery Lightbox Script -->
+  <script>
+    // Lightbox functionality
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxNext = document.getElementById('lightbox-next');
+    
+    let currentIndex = 0;
+    const images = Array.from(galleryItems);
+    
+    // Open lightbox
+    galleryItems.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        currentIndex = index;
+        showImage(currentIndex);
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    // Show image function
+    function showImage(index) {
+      const img = images[index];
+      lightboxImg.src = img.src.replace('w=600', 'w=1200'); // Higher resolution for lightbox
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = img.dataset.caption || img.alt;
+    }
+    
+    // Close lightbox
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+    
+    lightboxClose.addEventListener('click', closeLightbox);
+    
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+    
+    // Navigation
+    lightboxPrev.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(currentIndex);
+    });
+    
+    lightboxNext.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage(currentIndex);
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.classList.contains('flex')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') {
+          currentIndex = (currentIndex - 1 + images.length) % images.length;
+          showImage(currentIndex);
+        }
+        if (e.key === 'ArrowRight') {
+          currentIndex = (currentIndex + 1) % images.length;
+          showImage(currentIndex);
+        }
+      }
+    });
+  </script>
+
+  <!-- Sample Navigation -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <div class="bg-black/20 backdrop-blur-sm rounded-lg p-2 shadow-lg border border-sakura-gold/20">
+      <div class="text-xs text-sakura-gold/70 mb-2 text-center">Portfolio Samples</div>
+      <div class="flex flex-col space-y-2">
+        <a href="../sample1-modern-cafe/gallery.html" class="px-3 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded text-xs font-semibold text-center transition-colors">
+          Sample 1: Noodles
+        </a>
+        <a href="../sample2-vibrant-diner/gallery.html" class="px-3 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded text-xs font-semibold text-center transition-colors">
+          Sample 2: Pizza
+        </a>
+        <button class="px-3 py-2 bg-sakura-gold text-sakura-dark rounded text-xs font-semibold">
+          Current: Sample 3
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

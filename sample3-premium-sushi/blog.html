@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Blog - Sakura Sushi Bar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'sakura-gold': '#D4AF37',
+            'sakura-red': '#B91C1C',
+            'sakura-dark': '#1A1A1A',
+            'sakura-darker': '#0F0F0F',
+            'sakura-light': '#2A2A2A'
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'serif'],
+            'japanese': ['Noto Sans JP', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-japanese bg-sakura-dark text-white">
+  <div id="particles-js"></div>
+  
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full bg-sakura-dark/95 backdrop-blur-md shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <a href="index.html" class="text-2xl font-heading font-bold text-sakura-gold">🌸 Sakura Sushi Bar</a>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="index.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Home</a>
+            <a href="menu.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Menu</a>
+            <a href="promotions.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Promotions</a>
+            <a href="gallery.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Gallery</a>
+            <a href="blog.html" class="text-sakura-gold px-3 py-2">News</a>
+            <a href="contact.html" class="text-gray-300 hover:text-sakura-gold transition-colors px-3 py-2">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-12 bg-sakura-darker">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="scroll-animate fade-up text-5xl md:text-7xl font-heading text-sakura-gold mb-6">News & Updates</h1>
+      <p class="scroll-animate fade-up animate-delay-200 text-xl text-gray-300 max-w-3xl mx-auto">
+        Stay updated with the latest news, events, and culinary insights from Sakura Sushi Bar
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Article -->
+  <section class="py-20 bg-sakura-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="scroll-animate fade-up bg-sakura-light rounded-xl overflow-hidden shadow-2xl">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-0">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&w=800&q=80" 
+                 alt="New Menu Launch" class="w-full h-96 lg:h-full object-cover">
+            <div class="absolute top-4 left-4">
+              <span class="bg-sakura-gold text-sakura-dark px-3 py-1 rounded-full text-sm font-semibold">FEATURED</span>
+            </div>
+          </div>
+          <div class="p-8 lg:p-12">
+            <div class="flex items-center text-sm text-gray-400 mb-4">
+              <i class="fas fa-calendar mr-2"></i>
+              <span>December 15, 2024</span>
+              <span class="mx-2">•</span>
+              <i class="fas fa-user mr-2"></i>
+              <span>Chef Takeshi</span>
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-heading text-sakura-gold mb-6">Introducing Our Winter Omakase Experience</h2>
+            <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+              We're excited to unveil our exclusive Winter Omakase menu, featuring seasonal delicacies and premium ingredients sourced directly from Japan. This limited-time experience showcases the essence of winter flavors with innovative presentation techniques.
+            </p>
+            <p class="text-gray-300 mb-8">
+              Our master chef has crafted this 15-course journey to celebrate the beauty of Japanese winter cuisine, featuring rare ingredients like wild matsutake mushrooms, premium winter yellowtail, and specially aged soy sauce.
+            </p>
+            <a href="#" class="inline-block bg-gradient-to-r from-sakura-gold to-yellow-500 text-sakura-dark px-6 py-3 rounded-lg font-semibold hover:from-yellow-500 hover:to-sakura-gold transition-all duration-300">
+              Read Full Article
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Articles -->
+  <section class="py-20 bg-sakura-darker">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="scroll-animate fade-up text-4xl md:text-6xl font-heading text-sakura-gold mb-16 text-center">Latest Updates</h2>
+      
+      <div class="grid lg:grid-cols-3 gap-8">
+        
+        <!-- Article 1 -->
+        <article class="scroll-animate fade-up bg-sakura-light rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1563612116625-3012372fccce?ixlib=rb-4.0.3&w=600&q=80" 
+               alt="Sake Tasting Event" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-400 mb-3">
+              <i class="fas fa-calendar mr-2"></i>
+              <span>December 10, 2024</span>
+            </div>
+            <h3 class="text-xl font-heading text-sakura-gold mb-3">Premium Sake Tasting Event This Saturday</h3>
+            <p class="text-gray-300 mb-4">Join our sommelier for an exclusive tasting session featuring rare sakes from acclaimed Japanese breweries.</p>
+            <a href="#" class="text-sakura-gold hover:underline font-medium">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="scroll-animate fade-up animate-delay-200 bg-sakura-light rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&w=600&q=80" 
+               alt="Restaurant Award" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-400 mb-3">
+              <i class="fas fa-calendar mr-2"></i>
+              <span>December 5, 2024</span>
+            </div>
+            <h3 class="text-xl font-heading text-sakura-gold mb-3">Sakura Receives 'Best Japanese Restaurant' Award</h3>
+            <p class="text-gray-300 mb-4">We're honored to receive recognition from the Malaysian Culinary Awards for our authentic Japanese dining experience.</p>
+            <a href="#" class="text-sakura-gold hover:underline font-medium">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="scroll-animate fade-up animate-delay-400 bg-sakura-light rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&w=600&q=80" 
+               alt="Cooking Class" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-400 mb-3">
+              <i class="fas fa-calendar mr-2"></i>
+              <span>November 28, 2024</span>
+            </div>
+            <h3 class="text-xl font-heading text-sakura-gold mb-3">Sushi Making Classes Now Available</h3>
+            <p class="text-gray-300 mb-4">Learn the art of sushi making with our master chef in intimate, hands-on classes every Sunday.</p>
+            <a href="#" class="text-sakura-gold hover:underline font-medium">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="scroll-animate fade-up bg-sakura-light rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&w=600&q=80" 
+               alt="New Chef" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-400 mb-3">
+              <i class="fas fa-calendar mr-2"></i>
+              <span>November 20, 2024</span>
+            </div>
+            <h3 class="text-xl font-heading text-sakura-gold mb-3">Welcome Our New Sous Chef from Tokyo</h3>
+            <p class="text-gray-300 mb-4">We're excited to welcome Chef Hiroshi Tanaka, bringing 15 years of experience from Michelin-starred restaurants.</p>
+            <a href="#" class="text-sakura-gold hover:underline font-medium">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="scroll-animate fade-up animate-delay-200 bg-sakura-light rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&w=600&q=80" 
+               alt="Sustainability" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-400 mb-3">
+              <i class="fas fa-calendar mr-2"></i>
+              <span>November 15, 2024</span>
+            </div>
+            <h3 class="text-xl font-heading text-sakura-gold mb-3">Our Commitment to Sustainable Sourcing</h3>
+            <p class="text-gray-300 mb-4">Learn about our partnerships with responsible fisheries and our efforts to reduce environmental impact.</p>
+            <a href="#" class="text-sakura-gold hover:underline font-medium">Read More →</a>
+          </div>
+        </article>
+
+        <!-- Article 6 -->
+        <article class="scroll-animate fade-up animate-delay-400 bg-sakura-light rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:transform hover:scale-105">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&w=600&q=80" 
+               alt="Group Dining" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <div class="flex items-center text-sm text-gray-400 mb-3">
+              <i class="fas fa-calendar mr-2"></i>
+              <span>November 10, 2024</span>
+            </div>
+            <h3 class="text-xl font-heading text-sakura-gold mb-3">Private Dining Rooms Now Open</h3>
+            <p class="text-gray-300 mb-4">Experience intimate dining in our newly renovated private rooms, perfect for special occasions and business meetings.</p>
+            <a href="#" class="text-sakura-gold hover:underline font-medium">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-12">
+        <button class="scroll-animate fade-up bg-gradient-to-r from-sakura-gold to-yellow-500 text-sakura-dark px-8 py-4 text-lg font-semibold rounded-lg hover:from-yellow-500 hover:to-sakura-gold transition-all duration-300">
+          Load More Articles
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="py-20 bg-sakura-dark">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="scroll-animate fade-up bg-gradient-to-r from-sakura-gold to-yellow-500 rounded-xl p-12">
+        <h2 class="text-4xl font-heading text-sakura-dark mb-6">Stay Updated</h2>
+        <p class="text-xl text-sakura-dark mb-8">
+          Subscribe to our newsletter for the latest news, special offers, and culinary insights
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+          <input type="email" placeholder="Enter your email address" 
+                 class="flex-1 px-4 py-3 rounded-lg border-0 text-sakura-dark placeholder-gray-600 focus:ring-2 focus:ring-sakura-dark">
+          <button type="submit" 
+                  class="bg-sakura-dark text-sakura-gold px-6 py-3 rounded-lg font-semibold hover:bg-black transition-all duration-300">
+            Subscribe
+          </button>
+        </form>
+        <p class="text-sm text-sakura-dark/80 mt-4">
+          We respect your privacy. Unsubscribe at any time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories & Archives -->
+  <section class="py-20 bg-sakura-darker">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12">
+        
+        <!-- Categories -->
+        <div class="scroll-animate fade-up">
+          <h2 class="text-3xl font-heading text-sakura-gold mb-8">Categories</h2>
+          <div class="space-y-4">
+            <a href="#" class="flex justify-between items-center p-4 bg-sakura-light rounded-lg hover:bg-sakura-gold hover:text-sakura-dark transition-all duration-300 group">
+              <span class="font-medium">🍣 Menu Updates</span>
+              <span class="text-sm group-hover:text-sakura-dark">12 articles</span>
+            </a>
+            <a href="#" class="flex justify-between items-center p-4 bg-sakura-light rounded-lg hover:bg-sakura-gold hover:text-sakura-dark transition-all duration-300 group">
+              <span class="font-medium">🎌 Events & Workshops</span>
+              <span class="text-sm group-hover:text-sakura-dark">8 articles</span>
+            </a>
+            <a href="#" class="flex justify-between items-center p-4 bg-sakura-light rounded-lg hover:bg-sakura-gold hover:text-sakura-dark transition-all duration-300 group">
+              <span class="font-medium">👨‍🍳 Chef Stories</span>
+              <span class="text-sm group-hover:text-sakura-dark">6 articles</span>
+            </a>
+            <a href="#" class="flex justify-between items-center p-4 bg-sakura-light rounded-lg hover:bg-sakura-gold hover:text-sakura-dark transition-all duration-300 group">
+              <span class="font-medium">🏆 Awards & Recognition</span>
+              <span class="text-sm group-hover:text-sakura-dark">4 articles</span>
+            </a>
+            <a href="#" class="flex justify-between items-center p-4 bg-sakura-light rounded-lg hover:bg-sakura-gold hover:text-sakura-dark transition-all duration-300 group">
+              <span class="font-medium">🌱 Sustainability</span>
+              <span class="text-sm group-hover:text-sakura-dark">5 articles</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Recent Posts -->
+        <div class="scroll-animate fade-up animate-delay-200">
+          <h2 class="text-3xl font-heading text-sakura-gold mb-8">Recent Posts</h2>
+          <div class="space-y-6">
+            
+            <div class="flex gap-4">
+              <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&w=200&q=80" 
+                   alt="Article thumbnail" class="w-20 h-20 object-cover rounded-lg">
+              <div>
+                <h3 class="font-medium text-white mb-2 hover:text-sakura-gold transition-colors cursor-pointer">
+                  Winter Omakase Experience Launch
+                </h3>
+                <p class="text-sm text-gray-400">December 15, 2024</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <img src="https://images.unsplash.com/photo-1563612116625-3012372fccce?ixlib=rb-4.0.3&w=200&q=80" 
+                   alt="Article thumbnail" class="w-20 h-20 object-cover rounded-lg">
+              <div>
+                <h3 class="font-medium text-white mb-2 hover:text-sakura-gold transition-colors cursor-pointer">
+                  Premium Sake Tasting Event
+                </h3>
+                <p class="text-sm text-gray-400">December 10, 2024</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&w=200&q=80" 
+                   alt="Article thumbnail" class="w-20 h-20 object-cover rounded-lg">
+              <div>
+                <h3 class="font-medium text-white mb-2 hover:text-sakura-gold transition-colors cursor-pointer">
+                  Best Japanese Restaurant Award
+                </h3>
+                <p class="text-sm text-gray-400">December 5, 2024</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&w=200&q=80" 
+                   alt="Article thumbnail" class="w-20 h-20 object-cover rounded-lg">
+              <div>
+                <h3 class="font-medium text-white mb-2 hover:text-sakura-gold transition-colors cursor-pointer">
+                  Sushi Making Classes Launch
+                </h3>
+                <p class="text-sm text-gray-400">November 28, 2024</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-sakura-dark border-t border-sakura-light py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-2xl font-heading text-sakura-gold mb-4">🌸 Sakura Sushi Bar</h3>
+          <p class="text-gray-400">Authentic Japanese dining experience in Kuala Lumpur.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-sakura-gold transition-colors">Home</a></li>
+            <li><a href="menu.html" class="text-gray-400 hover:text-sakura-gold transition-colors">Menu</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-sakura-gold transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+          <p class="text-gray-400">+60 3-2148 8888<br>123 Bukit Bintang, KL</p>
+        </div>
+      </div>
+      
+      <div class="border-t border-sakura-light mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2024 Sakura Sushi Bar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sample Navigation -->
+  <div class="fixed bottom-4 right-4 z-50">
+    <div class="bg-black/20 backdrop-blur-sm rounded-lg p-2 shadow-lg border border-sakura-gold/20">
+      <div class="text-xs text-sakura-gold/70 mb-2 text-center">Portfolio Samples</div>
+      <div class="flex flex-col space-y-2">
+        <a href="../sample1-modern-cafe/blog.html" class="px-3 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded text-xs font-semibold text-center transition-colors">
+          Sample 1: Noodles
+        </a>
+        <a href="../sample2-vibrant-diner/blog.html" class="px-3 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded text-xs font-semibold text-center transition-colors">
+          Sample 2: Pizza
+        </a>
+        <button class="px-3 py-2 bg-sakura-gold text-sakura-dark rounded text-xs font-semibold">
+          Current: Sample 3
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

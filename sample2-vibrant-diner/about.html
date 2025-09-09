@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Urban Pizza Co. | Our Story & Mission</title>
+    <meta name="description" content="Learn about Urban Pizza Co.'s journey, our passionate team, and commitment to bringing authentic wood-fired pizza to Kuala Lumpur.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heading': ['Bebas Neue', 'cursive'],
+                        'body': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'pizza-red': '#DC2626',
+                        'pizza-dark': '#1F2937',
+                        'pizza-black': '#111827',
+                        'pizza-light': '#F3F4F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-pizza-red rounded-lg p-2" aria-label="Urban Pizza Co. Home">
+                    <div class="w-10 h-10 bg-pizza-red rounded-full flex items-center justify-center">
+                        <i class="fas fa-pizza-slice text-white text-lg"></i>
+                    </div>
+                    <span class="font-heading text-2xl text-pizza-black">Urban Pizza Co.</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="font-medium text-gray-700 hover:text-pizza-red transition-colors focus:outline-none focus:ring-2 focus:ring-pizza-red rounded px-2 py-1">Home</a>
+                    <a href="menu.html" class="font-medium text-gray-700 hover:text-pizza-red transition-colors focus:outline-none focus:ring-2 focus:ring-pizza-red rounded px-2 py-1">Menu</a>
+                    <a href="about.html" class="font-medium text-pizza-red hover:text-pizza-dark transition-colors focus:outline-none focus:ring-2 focus:ring-pizza-red rounded px-2 py-1" aria-current="page">About Us</a>
+                    <a href="contact.html" class="font-medium text-gray-700 hover:text-pizza-red transition-colors focus:outline-none focus:ring-2 focus:ring-pizza-red rounded px-2 py-1">Contact</a>
+                    <a href="contact.html#reservation" class="bg-pizza-red text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-all focus:outline-none focus:ring-2 focus:ring-pizza-red focus:ring-offset-2 min-h-[44px] min-w-[44px] flex items-center">Reserve Table</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden focus:outline-none focus:ring-2 focus:ring-pizza-red rounded p-2 min-h-[44px] min-w-[44px] flex items-center justify-center" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <i class="fas fa-bars text-xl text-pizza-black"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobileMenu">
+                <div class="py-4 space-y-2">
+                    <a href="index.html" class="block py-3 px-4 text-gray-700 hover:text-pizza-red focus:outline-none focus:bg-gray-50 rounded">Home</a>
+                    <a href="menu.html" class="block py-3 px-4 text-gray-700 hover:text-pizza-red focus:outline-none focus:bg-gray-50 rounded">Menu</a>
+                    <a href="about.html" class="block py-3 px-4 text-pizza-red font-medium focus:outline-none focus:bg-gray-50 rounded" aria-current="page">About Us</a>
+                    <a href="contact.html" class="block py-3 px-4 text-gray-700 hover:text-pizza-red focus:outline-none focus:bg-gray-50 rounded">Contact</a>
+                    <a href="contact.html#reservation" class="block mx-4 mt-4 bg-pizza-red text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all text-center focus:outline-none focus:ring-2 focus:ring-pizza-red">Reserve Table</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-gradient-to-br from-pizza-black to-gray-900 text-white overflow-hidden">
+        <!-- Particles Background -->
+        <div id="particles-js" class="absolute inset-0"></div>
+        
+        <div class="relative z-10 container mx-auto px-4 text-center">
+            <h1 class="font-heading text-5xl md:text-7xl mb-6 fade-up">
+                OUR STORY<br>
+                <span class="text-pizza-red">& MISSION</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed fade-up" style="animation-delay: 0.2s;">
+                From humble beginnings to Kuala Lumpur's favorite pizza destination - discover the passion behind every slice
+            </p>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-up">
+                    <h2 class="font-heading text-4xl md:text-5xl text-pizza-black mb-6">How It All Started</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Urban Pizza Co. was born from a simple dream: to bring the authentic taste of Italian wood-fired pizza to the bustling streets of Kuala Lumpur. In 2022, our founder Marco Antonio, a third-generation pizzaiolo from Naples, decided to share his family's 80-year-old pizza recipes with Malaysia.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        After extensive research and countless recipe tests, we opened our doors with a commitment to using only the finest ingredients - from San Marzano tomatoes imported directly from Italy to locally sourced fresh herbs and vegetables.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Today, we're proud to serve thousands of happy customers who have made us their go-to destination for authentic, delicious pizza in a vibrant, modern atmosphere.
+                    </p>
+                </div>
+                <div class="fade-up" style="animation-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza chef preparing dough" class="rounded-2xl shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="py-20 bg-pizza-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-5xl md:text-6xl text-pizza-black mb-4 fade-up">Our Mission & Values</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-up" style="animation-delay: 0.2s;">
+                    We're driven by our commitment to excellence, authenticity, and community
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center group fade-up" style="animation-delay: 0.3s;">
+                    <div class="w-20 h-20 bg-pizza-red rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-heart text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-pizza-black mb-4">Passion for Pizza</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every pizza is crafted with love and attention to detail, using time-honored techniques passed down through generations of Italian pizza makers.
+                    </p>
+                </div>
+                
+                <div class="text-center group fade-up" style="animation-delay: 0.4s;">
+                    <div class="w-20 h-20 bg-pizza-red rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-seedling text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-pizza-black mb-4">Fresh & Sustainable</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We source locally whenever possible and import only the finest Italian ingredients, supporting sustainable farming and reducing our carbon footprint.
+                    </p>
+                </div>
+                
+                <div class="text-center group fade-up" style="animation-delay: 0.5s;">
+                    <div class="w-20 h-20 bg-pizza-red rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-users text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-pizza-black mb-4">Community First</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We're more than a restaurant - we're a gathering place for families, friends, and pizza lovers to create lasting memories over great food.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-5xl md:text-6xl text-pizza-black mb-4 fade-up">Meet Our Team</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-up" style="animation-delay: 0.2s;">
+                    The passionate people behind every perfect pizza
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Chef Marco -->
+                <div class="text-center group fade-up" style="animation-delay: 0.3s;">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Chef Marco Antonio" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <div class="absolute inset-0 bg-pizza-red rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="font-heading text-2xl text-pizza-black mb-2">Marco Antonio</h3>
+                    <p class="text-pizza-red font-semibold mb-4">Head Chef & Founder</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Third-generation pizzaiolo from Naples with 20+ years of experience. Marco brings authentic Italian recipes and techniques to Urban Pizza Co.
+                    </p>
+                </div>
+                
+                <!-- Sarah -->
+                <div class="text-center group fade-up" style="animation-delay: 0.4s;">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1625489409904-324a5e9591e1?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sarah Lim" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <div class="absolute inset-0 bg-pizza-red rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="font-heading text-2xl text-pizza-black mb-2">Sarah Lim</h3>
+                    <p class="text-pizza-red font-semibold mb-4">Restaurant Manager</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        With 15 years in hospitality management, Sarah ensures every guest has an exceptional experience from the moment they walk through our doors.
+                    </p>
+                </div>
+                
+                <!-- Ahmad -->
+                <div class="text-center group fade-up" style="animation-delay: 0.5s;">
+                    <div class="relative mb-6">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Ahmad Hassan" class="w-48 h-48 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                        <div class="absolute inset-0 bg-pizza-red rounded-full opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                    <h3 class="font-heading text-2xl text-pizza-black mb-2">Ahmad Hassan</h3>
+                    <p class="text-pizza-red font-semibold mb-4">Sous Chef</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Local culinary expert who helps blend traditional Italian techniques with Malaysian flavors. Ahmad oversees quality control and kitchen operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-pizza-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-5xl md:text-6xl text-pizza-black mb-4 fade-up">Our Pizza Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-up" style="animation-delay: 0.2s;">
+                    From dough to delicious - see how we create the perfect pizza
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center fade-up" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-pizza-red rounded-full flex items-center justify-center mx-auto mb-6 text-white font-heading text-2xl">
+                        1
+                    </div>
+                    <h3 class="font-heading text-xl text-pizza-black mb-4">Fresh Dough</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our dough is made fresh daily using a 48-hour fermentation process for the perfect texture and flavor.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center fade-up" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 bg-pizza-red rounded-full flex items-center justify-center mx-auto mb-6 text-white font-heading text-2xl">
+                        2
+                    </div>
+                    <h3 class="font-heading text-xl text-pizza-black mb-4">Quality Toppings</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We carefully select and prepare each topping, from imported Italian cheeses to locally sourced fresh vegetables.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center fade-up" style="animation-delay: 0.5s;">
+                    <div class="w-16 h-16 bg-pizza-red rounded-full flex items-center justify-center mx-auto mb-6 text-white font-heading text-2xl">
+                        3
+                    </div>
+                    <h3 class="font-heading text-xl text-pizza-black mb-4">Wood-Fire Magic</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Our authentic wood-fired oven reaches 900°F, creating the perfect crispy crust and smoky flavor in just 90 seconds.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center fade-up" style="animation-delay: 0.6s;">
+                    <div class="w-16 h-16 bg-pizza-red rounded-full flex items-center justify-center mx-auto mb-6 text-white font-heading text-2xl">
+                        4
+                    </div>
+                    <h3 class="font-heading text-xl text-pizza-black mb-4">Perfect Finish</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Fresh herbs, premium oils, and final touches are added before serving your pizza hot and fresh to your table.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-5xl md:text-6xl text-pizza-black mb-4 fade-up">Awards & Recognition</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-up" style="animation-delay: 0.2s;">
+                    We're honored to be recognized by the community and industry
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center fade-up" style="animation-delay: 0.3s;">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-trophy text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-xl text-pizza-black mb-4">Best New Restaurant 2023</h3>
+                    <p class="text-gray-600">Time Out Kuala Lumpur</p>
+                </div>
+                
+                <div class="text-center fade-up" style="animation-delay: 0.4s;">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-xl text-pizza-black mb-4">Certificate of Excellence</h3>
+                    <p class="text-gray-600">TripAdvisor 2023 & 2024</p>
+                </div>
+                
+                <div class="text-center fade-up" style="animation-delay: 0.5s;">
+                    <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-pizza-slice text-white text-3xl"></i>
+                    </div>
+                    <h3 class="font-heading text-xl text-pizza-black mb-4">Best Pizza in KL</h3>
+                    <p class="text-gray-600">Malaysia Food Awards 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-pizza-red text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="font-heading text-5xl md:text-6xl mb-6 fade-up">Experience Our Story</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto fade-up" style="animation-delay: 0.2s;">
+                Come taste the passion, tradition, and innovation that goes into every pizza we make
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center fade-up" style="animation-delay: 0.4s;">
+                <a href="contact.html#reservation" class="bg-white text-pizza-red px-8 py-4 text-lg font-semibold rounded-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 min-h-[44px] flex items-center">
+                    <i class="fas fa-calendar-alt mr-3"></i>
+                    Book Your Visit
+                </a>
+                <a href="menu.html" class="bg-transparent border-2 border-white text-white px-8 py-4 text-lg font-semibold rounded-lg hover:bg-white hover:text-pizza-red transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 min-h-[44px] flex items-center">
+                    <i class="fas fa-utensils mr-3"></i>
+                    View Our Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pizza-black text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-pizza-red rounded-full flex items-center justify-center">
+                            <i class="fas fa-pizza-slice text-white text-lg"></i>
+                        </div>
+                        <span class="font-heading text-2xl">Urban Pizza Co.</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Bringing authentic Italian flavors to the heart of Kuala Lumpur with our wood-fired pizzas and modern atmosphere.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/urbanpizzaco" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pizza-red transition-colors focus:outline-none focus:ring-2 focus:ring-pizza-red" aria-label="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/urbanpizzaco" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pizza-red transition-colors focus:outline-none focus:ring-2 focus:ring-pizza-red" aria-label="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@urbanpizzaco" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pizza-red transition-colors focus:outline-none focus:ring-2 focus:ring-pizza-red" aria-label="Follow us on TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors focus:outline-none focus:text-white">Home</a></li>
+                        <li><a href="menu.html" class="text-gray-300 hover:text-white transition-colors focus:outline-none focus:text-white">Menu</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors focus:outline-none focus:text-white">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors focus:outline-none focus:text-white">Contact</a></li>
+                        <li><a href="contact.html#reservation" class="text-gray-300 hover:text-white transition-colors focus:outline-none focus:text-white">Reservations</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Info</h3>
+                    <div class="space-y-4 text-gray-300">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-pizza-red mt-1"></i>
+                            <div>
+                                <p>123 Jalan Bukit Bintang</p>
+                                <p>Kuala Lumpur 55100</p>
+                                <p>Malaysia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-pizza-red"></i>
+                            <p>+60 3-2141 8000</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-pizza-red"></i>
+                            <p>hello@urbanpizzaco.com</p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-pizza-red"></i>
+                            <div>
+                                <p>Mon-Sun: 11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Urban Pizza Co. All rights reserved. | Designed with ❤️ by HTech Dev</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sample Navigation -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-2 shadow-lg border border-white/20">
+            <div class="text-xs text-white/70 mb-2 text-center">Portfolio Samples</div>
+            <div class="flex flex-col space-y-2">
+                <a href="../sample1-modern-cafe/about.html" class="px-3 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded text-xs font-semibold text-center transition-colors">
+                    Sample 1: Noodles
+                </a>
+                <button class="px-3 py-2 bg-red-600 text-white rounded text-xs font-semibold">
+                    Current: Sample 2
+                </button>
+                <a href="../sample3-premium-sushi/about.html" class="px-3 py-2 bg-gray-600 hover:bg-gray-500 text-white rounded text-xs font-semibold text-center transition-colors">
+                    Sample 3: Sushi
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
